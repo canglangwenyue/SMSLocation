@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<Button 
+	android:onClick="SendK" 
+	android:layout_width="wrap_content" 
+	android:id="@+id/button2" 
+	android:background="@drawable/selector"
+	android:text="启动" 
+	android:layout_above="@+id/bmapView" 
+	android:layout_alignParentLeft="true" android:layout_height="35dp"></Button>
+	<Button android:onClick="search" android:layout_width="wrap_content" android:id="@+id/button1" android:background="@drawable/selector" android:text="查询" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_height="35dp"></Button>
+	<Button
+	android:onClick="Sendg" 
+	android:layout_width="wrap_content" android:id="@+id/button3" android:background="@drawable/selector" android:text="停止" android:layout_above="@+id/bmapView" android:layout_toRightOf="@+id/button2" android:layout_height="35dp"></Button>
+	<Button
+	android:onClick="Sendd" 
+	android:layout_width="wrap_content" android:id="@+id/button4" android:layout_height="35dp" android:background="@drawable/selector" android:text="限定距离" android:layout_alignParentTop="true" android:layout_toRightOf="@+id/button3"></Button>
+	<Button
+	android:onClick="Sendt" 
+	android:layout_width="wrap_content" android:id="@+id/button5" android:background="@drawable/selector" android:text="定时获取" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/button1" android:layout_toRightOf="@+id/button4" android:layout_height="35dp"></Button>
+	<com.baidu.mapapi.MapView android:layout_width="fill_parent" android:clickable="true" android:id="@+id/bmapView" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_height="443dp"></com.baidu.mapapi.MapView>
+	<LinearLayout android:layout_width="match_parent" 
+	android:background="#E1E1E1" android:id="@+id/linearLayout1" android:layout_height="5dp" android:layout_below="@+id/button2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true"></LinearLayout> 
+
+</RelativeLayout>
